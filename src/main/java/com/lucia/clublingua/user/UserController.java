@@ -38,4 +38,9 @@ public class UserController {
     public ResponseEntity<List<User>> findConnectedUsers() {
         return ResponseEntity.ok(userService.findConnectedUsers());
     }
+
+    @GetMapping("/test")
+    public ResponseEntity<String> helloFromMe(){
+        return ResponseEntity.ok("Hey whatsuuuppp");
+    }
 }
