@@ -1,0 +1,11 @@
+package com.lucia.clublingua.chatroom;
+
+import com.mongodb.client.MongoDatabase;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.Optional;
+
+public interface ChatRoomRepository extends MongoRepository<ChatRoom,String> {
+
+    Optional <ChatRoom>findBySenderIdAndRecipientId(String senderId, String recipientId);
+}

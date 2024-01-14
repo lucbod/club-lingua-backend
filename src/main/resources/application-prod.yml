@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri: "mongodb+srv://${MONGODB_NAME_PROD}:${MONGODB_PASSWORD_PROD}@cluster0.66pj8zs.mongodb.net/?retryWrites=true&w=majority"
+      database: chat_app
+server:
+  port: 8088
