@@ -43,4 +43,9 @@ public class UserController {
     public ResponseEntity<String> helloFromMe(){
         return ResponseEntity.ok("Hey whatsuuuppp");
     }
+
+    @GetMapping("/another-test")
+    public ResponseEntity<String> heyFromMe(){
+        return ResponseEntity.ok("Pipeline works!!!Go to sleep");
+    }
 }
